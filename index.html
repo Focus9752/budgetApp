@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Budget App</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body id="body">
+    <div id="top">
+        <div id="top_title">
+            <span id="greeting">%greeting%</span>
+            <br />
+            <span id="time">%time%</span>
+            <br />
+            <span id="month">%month%</span><span id="currentDate">%date%</span><span id="year">%year%</span>
+            Available budget:
+            <div id="budgetValue">%budgetValue%</div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="add">
+            <div id="addContainer">
+                <select id="currencyType" onchange="currencyManager()">
+                    <option value="notSelected" selected>select a currency</option>
+                    <option value="kr.">kr.</option>
+                    <option value="pound">£</option>
+                    <option value="$">$</option>
+                    <option value="eur.">€</option>
+                    <option value="jpn">¥</option>
+                    <option value="chf">chf.</option>
+                    <option value="egp">E£</option>
+                </select>
+                <select id="addType">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                </select>
+                <input type="number" id="addGoal" placeholder="enter your savings goal" onchange="goalManager()" />
+                <input type="number" id="addBudget" placeholder="enter a value" onchange="budgetController()" />
+            </div>
+        </div>
+        <form id="currencyConverter">
+            <label for="DKK"> kr.: </label>
+            <input type="text" id="DKK" size="10" value="0" onchange="dkkfunc()" />
+
+            <label for="GBP"> £: </label>
+            <input type="text" id="GBP" size="10" value="0" onchange="gbpfunc()" />
+
+            <label for="USD"> $: </label>
+            <input type="text" id="USD" size="10" value="0" onchange="usdfunc()" />
+
+            <label for="EUR"> €: </label>
+            <input type="text" id="EUR" size="10" value="0" onchange="eurfunc()" />
+
+            <label for="JPN"> ¥: </label>
+            <input type="text" id="JPN" size="10" value="0" onchange="jpnfunc()" />
+
+            <label for="CHF"> chf.: </label>
+            <input type="text" id="CHF" size="10" value="0" onchange="chffunc()" />
+
+            <label for="EGP"> E£: </label>
+            <input type="text" id="EGP" size="10" value="0" onchange="egpfunc()" />
+        </form>
+        <br />
+        <button id="resetButton">reset</button>
+    </div>
+    <div id="below">
+        <br />
+        <span id="goalData">%data%</span>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p id="signature">Version 2.1. | Made by Marcus Krogsgaard.</p>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

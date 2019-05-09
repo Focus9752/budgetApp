@@ -1,0 +1,295 @@
+﻿body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+#top {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(https://image.freepik.com/free-vector/abstract-background-with-a-watercolor-texture_1048-2144.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#signature {
+    color: #555;
+}
+
+#below {
+    text-align: center;
+}
+
+#top_title {
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#budgetValue {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+#addType {
+    cursor: pointer;
+    width: 55px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+#currencyType {
+    cursor: pointer;
+    width: 150px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+#goalData {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#addGoal {
+    width: 200px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#addBudget {
+    width: 200px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#resetButton {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: #AD133A;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background: #4c2827;
+    border-bottom-color: #111;
+}
+
+#resetButton:active {
+    position: relative;
+    top: 1px;
+}
+
+#refreshButton {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: #AD133A;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+#refreshButton:hover {
+    background: #4c2827;
+    border-bottom-color: #111;
+}
+
+#refreshButton:active {
+    position: relative;
+    top: 1px;
+}
+
+#specificValueInput {
+    width: 100px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#add {
+    padding: 14px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#currencyConverter {
+    padding: 14px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#belowConverter {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#GBP {
+    width: 50px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#DKK {
+    width: 50px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#EUR {
+    width: 50px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#USD {
+    width: 50px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#JPN {
+    width: 50px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#CHF {
+    width: 50px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#addButton {
+    outline: 1px #28B9B5;
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+#EGP {
+    width: 50px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+#addButton:active {
+    transform: translateY(2px);
+}
